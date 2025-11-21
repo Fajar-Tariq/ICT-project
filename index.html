@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -30,8 +30,30 @@
             }
 
                 ul li a:hover {
-                    background-color: #B0C4DE;
+                    background-color: #00008B;
                 }
+                img{
+                    
+                    width:200px;
+                    max-width:400px;
+                    object-fit:cover;
+                    vertical-align:middle;
+                    height:150px;
+                }
+        wrapper {
+            padding: 0 15px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            gap: 5rem;
+        }
+        intro{
+            flex:1;
+        }
+        p{
+            font-size:200%;
+        }
     </style>
 </head>
 
@@ -43,6 +65,20 @@
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
     </ul>
+    <div class="wrapper">
+        <div class="profile">
+            <img src="my picture.jpg"/>
+            
+        <div class="intro">
+           
+          
+            <p> Hello, I'm <b style="color:darkblue;">Fajar Tariq.</b> I'm a <b style="color:darkblue;">Programmer.</b>
+            
+            </p>
+        </div>
+    </div>
+        </div>
+
 
 </body>
 </html>
