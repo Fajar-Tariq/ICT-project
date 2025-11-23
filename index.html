@@ -18,32 +18,44 @@
             list-style-type: none;
             margin: 0;
             padding: 0;
-            background-color: #191970;
+            background-color: rgb(23, 108, 98);
             display: flex;
+            justify-content:center;
+            position:relative;
+        }
+        nav {
+            width: 100%;
+            background-color: #0f5f56; 
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            position: relative;
         }
 
             ul li a {
-                display: block;
+                display: flex;
+                justify-content:center;
+                gap:15px;
                 color: white;
                 padding: 14px 16px;
-                text-decoration: none;
+                text-decoration:none;
+                align-items:center;
             }
 
                 ul li a:hover {
-                    background-color: #00008B;
+                    background-color: rgb(23, 83, 98);
                 }
                 img{
-                    
+                    display:flex;
                     width:200px;
                     max-width:400px;
                     object-fit:cover;
                     vertical-align:middle;
                     height:150px;
                 }
-        wrapper {
+        .wrapper {
             padding: 0 15px;
             display: flex;
-            flex-wrap: wrap;
             align-items: center;
             justify-content: space-around;
             gap: 5rem;
@@ -52,19 +64,47 @@
             flex:1;
         }
         p{
-            font-size:200%;
+            font-size:150%;
+            page-break-after:auto;
         }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+            .nav-links li {
+                padding: 10px 20px;
+                background: #0f5f56;
+                color: white;
+                cursor: pointer;
+            }
+        .contact {
+            position: absolute;
+            right: 20px; 
+            font-weight: bold;
+            color:white;
+        }
+
+        
     </style>
 </head>
 
 <body>
-
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">About</a></li>
-    </ul>
+    <nav>
+        <div class="nav-links">
+            <ul>
+                <li><a href="https://www.kinnaird.edu.pk/">Home</a></li>
+                <li><a href="https://www.googlemaps.com/?q=Kinnairdcollegeforwomenlahore">Location</a></li>
+                <li><a href="https://www.kinnaird.edu.pk/contact-us/">Contact</a></li>
+                <li><a href="https://www.kinnaird.edu.pk/about/">About</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <p> +111 222 3330</p>
+        </div>
+        </nav>
     <div class="wrapper">
         <div class="profile">
             <img src="my picture.jpg"/>
@@ -72,13 +112,14 @@
         <div class="intro">
            
           
-            <p> Hello, I'm <b style="color:darkblue;">Fajar Tariq.</b> I'm a <b style="color:darkblue;">Programmer.</b>
-            
+            <p>
+                Hello, I'm <b style="color: rgb(77, 90, 173);">Fajar Tariq.</b> I'm a developing <b style="color: rgb(77, 90, 173);">Programmer,</b>  who enjoys solving problems and turning ideas into working code. I’m still learning, but I’m comfortable exploring new technologies, experimenting with different approaches, and improving through practice. Programming allows me to think logically, fix real-world problems, and build things that actually work — and that’s what motivates me to keep growing.
+
             </p>
         </div>
     </div>
         </div>
 
-
+    <a href="information.html"></a>
 </body>
 </html>
