@@ -31,6 +31,7 @@
             align-items: center;
             justify-content: center; 
             position: relative;
+            height:70px;
         }
 
             ul li a {
@@ -49,7 +50,6 @@
                 img{
                     display:flex;
                     width:200px;
-                    max-width:400px;
                     object-fit:cover;
                     vertical-align:middle;
                     height:150px;
@@ -59,8 +59,11 @@
             padding: 0 15px;
             display: flex;
             align-items: center;
-            justify-content: space-around;
+            justify-content:center;
             gap: 5rem;
+            height:calc(100vh-70px)
+            padding 0 20px;
+            margin-top:60px;
         }
         intro{
             flex:1;
@@ -68,7 +71,7 @@
         p{
             color:white;
             font-size:150%;
-            page-break-after:auto;
+            max-width:500px;
         }
         .nav-links {
             list-style: none;
@@ -87,7 +90,10 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 40px;
+            gap: 3 rem;
+            height:calc(100vh-50px)
+            padding 0 20px;
+
         }
 
         .contact {
@@ -130,7 +136,12 @@
 .secondary:hover {
     background-color: #c2c7ff;
 }
-
+ @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
 
         
     </style>
