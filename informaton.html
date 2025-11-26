@@ -1,11 +1,138 @@
 ﻿<!DOCTYPE html>
 
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
     <meta charset="utf-8" />
+    <title>my works</title>
+   <style>
+    body{
+        background-color:black;
+        margin:0;
+        padding:0;
+    }
+    .stats-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+   .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 60px;
+}
 
+.stat-box {
+    display: flex;
+    align-items:flex-start;
+    gap: 20px;
+}
+
+.line {
+    width: 6px;
+    height: 80px;
+    border-radius: 2px;
+}
+
+.purple{ background-color: #D6B9FC; }
+
+h3 {
+    color: #c7b3ff;
+    margin: 0;
+    font-size: 28px;
+    text-shadow: 0 0 4px rgba(159, 134, 255, 0.4);
+}
+
+p {
+    margin:8px 0 0 0;
+    font-size: 18px;
+    color:white;
+    line-height: 1.6;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.2);
+}
+.buttons {
+    display:flex;
+    gap: 50px;
+    margin-top: 150px;
+    position:fixed;
+    right:70px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px; 
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+} 
+.secondary {
+    background-color: #D6DAFF; 
+    color: black;
+}
+.secondary:hover {
+    background-color: #c2c7ff;
+}
+    
+   </style>
 </head>
 <body>
+     <div class="stats-wrapper">
+        <div class="stats-grid">
+    <div class="stat-box">
+        <div class="line purple"></div>
+        <div>
+            <h3>Projects</h3>
+            <p>.Business portfolio
+                <br>
+               .Resume
+               <br>
+               .Scratch Projects
+            </p>
+        </div>
+    </div>
 
+    <div class="stat-box">
+        <div class="line purple"></div>
+        <div>
+            <h3>Skills</h3>
+            <p>.Canva
+                <br>
+               .Scratch App
+               <br>
+               .Word 2019
+               <br>
+               .Microsoft Office 2013
+               <br>
+               .Video Editing 
+               <br>
+               .C++
+               <br>
+               .C Language       
+            </p>
+        </div>
+    </div>
+
+    <div class="stat-box">
+        <div class="line purple"></div>
+        <div>
+            <h3>Achievements</h3>
+            <p>Word Specialist
+            </p>
+        </div>
+    </div>
+
+    <div class="stat-box">
+        <div class="line purple"></div>
+        <div>
+            <h3>Work Experience</h3>
+            <p>I'm still a student.</p>
+            
+        </div>
+    </div>
+</div>
+<div class="buttons">
+                <a href="tel:+1112223330" class="btn secondary">Contact Me</a>
+             </div>
+     </div>
 </body>
 </html>
