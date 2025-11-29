@@ -10,21 +10,7 @@
             margin: 0;
             padding: 0;
         }
-
-        h2, p {
-            margin: 10px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            background-color:#d9c8ff;
-            display: flex;
-            justify-content:center;
-            position:relative;
-            font-size:19px;
-        }
+       
         nav {
             width: 100%;
             background-color: #FFB6DD; 
@@ -34,45 +20,32 @@
             position: relative;
             height:70px;
         }
-
-            ul li a {
-                display: flex;
-                justify-content:center;
-                gap:15px;
-                color: white;
-                padding: 14px 16px;
-                text-decoration:none;
-                align-items:center;
-            }
-
-                ul li a:hover {
-                    background-color: #d9c8;;
-                }
-                img{
-                    display:flex;
-                    width:200px;
-                    object-fit:cover;
-                    vertical-align:middle;
-                    height:150px;
-                    border-radius: 10px;
-                }
+                
+        img{
+            display:flex;
+            width:200px;
+            object-fit:cover;
+            vertical-align:middle;
+            height:200px;
+            border-radius: 20px;
+         }
         .wrapper {
-            padding: 0 15px;
-            display: flex;
-            align-items: center;
-            justify-content:center;
-            gap: 5rem;
-            height:calc(100vh-70px)
-            padding 0 20px;
+
+            display: flex; 
+            align-items: center; 
+            justify-content:center; 
+            gap: 5rem; 
+            height:calc(100vh-50px);
+            padding:0 20px; 
             margin-top:130px;
         }
-        intro{
+        .intro{
             flex:1;
         }
         p{
             color:white;
             font-size:170%;
-            max-width:300px;
+            max-width:500px;
         }
         .nav-links {
             list-style: none;
@@ -81,60 +54,65 @@
             padding: 0;
             margin: 0;
         }
-            .nav-links li {
+            .nav-links li a{
                 padding: 10px 20px;
                 background:#FFB6DD;
                 color: white;
                 cursor: pointer;
+                text-decoration: none;
+                font-size:25px ;
             }
-            .profile {
+            .nav-links li a:hover {
+    background-color: #d9c8ff;
+}  
+        .profile {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 3 rem;
-            height:calc(100vh-50px)
-            padding 0 20px;
-
-        }
-
-        .contact {
+            justify-content: space-between; 
+            align-items: center; 
+            gap: 5rem;
+            height:calc(100vh-50px);
+            padding:0 20px;
+}
+       .contact {
             position: absolute;
-            right: 20px; 
-            font-weight: bold;
-            color:white;
-            
-        }
+            right: 20px;
+            margin: 0;
+}
 
+       .contact a {
+            color: white;
+            text-decoration:none;
+            font-weight: bold;
+}
  @media (max-width: 768px) {
             .wrapper {
                 flex-direction: column;
                 text-align: center;
             }
         }
-       .io{
-        color:white;
-        position:absolute;
-        left:20px;
-       } 
+       .logo{
+        position: absolute;
+    left: 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+       }
       
     </style>
 </head>
 
 <body>
     <nav>
-     <portfol class="io",style="text-align:left">potfol.io</portfol>
-        <div class="nav-links">
-            <ul>
-                <li><a href="https://www.kinnaird.edu.pk/">Home</a></li>
+     <p class="logo" style="text-align:left">potfol.io</p>
+        <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="https://www.googlemaps.com/?q=Kinnairdcollegeforwomenlahore">Location</a></li>
                 <li><a href="informaton.html">Projects</a></li>
                 <li><a href="https://www.kinnaird.edu.pk/about/">About</a></li>
                 <li><a href="dummy.html">Contact me</a></li>
-            </ul>
-        </div>
-        <div class="contact">
-            <p><a href="https://www.kinnaird.edu.pk/contact-us/" style="color:white;">Call us</a></p>
-        </div>
+        </ul>
+            <p class="contact"><a href="https://www.kinnaird.edu.pk/contact-us/" style="color:white;">Call us</a></p>
         </nav>
     <div class="wrapper">
         <div class="profile">
@@ -142,14 +120,13 @@
            
           
             <p>
-                Hello, I'm <b style="color:#FFB6DD;">Fajar Tariq.</b> I'm a developing <b style="color: #FFB6DD;">Programmer,</b>who likes to make computer dance on her fingers by giving commands.
-
+                Hello, I'm <b style="color:#FFB6DD;">Fajar Tariq.</b> I'm a developing <b style="color: #FFB6DD;">Programmer,</b>who loves making computers “dance” with code. I enjoy building things that are both functional and visually appealing, and I'm always excited to learn new tools and techniques. With every project, I aim to grow, explore, and bring ideas to life through programming.
             </p>
 
         </div>
-        <img src="image/my picture.jpg"/>
+        <img src="newone.jpg"/>
+        </div>
     </div>
-</div>
         
 </body>
 </html>
