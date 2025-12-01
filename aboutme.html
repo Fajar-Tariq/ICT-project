@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>About Me</title>
+
+    <style>
+        body {
+            background-color:#0F0F0F;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            background-color: #FFB6DD;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            height: 70px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .nav-links li a {
+            padding: 10px 20px;
+            background: #FFB6DD;
+            color: white;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        .nav-links li a:hover {
+            background-color: #d9c8ff;
+        }
+
+        .logo {
+            position: absolute;
+            left: 20px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0;
+        }
+
+        .contact {
+            position: absolute;
+            right: 20px;
+            margin: 0;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 130px;
+            padding: 0 20px;
+        }
+
+        .about-box {
+            display: flex;
+            align-items: center;
+            gap: 5rem;
+        }
+
+        img {
+            width: 250px;
+            height: 250px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(255,182,221,0.4);
+        }
+
+        .text-section {
+            max-width: 580px;
+        }
+
+        .text-section h1 {
+            color: #FFB6DD;
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        .text-section p {
+            color: white;
+            font-size: 20px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <p class="logo">potfol.io</p>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="informaton.html">Projects</a></li>
+            <li><a href="dummy.html">Contact me</a></li>
+        </ul>
+
+        <p class="contact"><a href="https://www.kinnaird.edu.pk/contact-us/">Call us</a></p>
+    </nav>
+
+    <div class="wrapper">
+        <div class="about-box">
+
+            <img src="my picture.jpg" alt="My photo">
+
+            <div class="text-section">
+                <h1>About Me</h1>
+
+                <p>
+                 I'm currently studyig at kinnaird college for women. I'm doing my BS in Computer science,which is very broad field
+                 today. I did my intermediate from PGC and secured <b style="color:#FFB6DD;">80% </b>and my matric from The Cathedral School and secured <b style="color:#FFB6DD;">91%</b> .Being a student is kind of hectic but good too, because i
+                 can learn new things daily.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
